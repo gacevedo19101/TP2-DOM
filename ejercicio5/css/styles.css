@@ -1,0 +1,89 @@
+/* --- Estilos Generales del Cuerpo --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    color: #333a45;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 95vh;
+    box-sizing: border-box;
+}
+
+/* --- Contenedor Principal (para la sección de inputs) --- */
+section {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: left;
+}
+
+/* --- Estilo del Encabezado H1 --- */
+h1 {
+    color: #6a8d92;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* --- Estilo para los Divs que contienen Label + Input --- */
+div {
+    margin-bottom: 20px;
+}
+
+/* --- Estilo de las Etiquetas (Labels) --- */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #5c7a7d;
+}
+
+/* --- Estilo de los Campos de Entrada (Inputs) --- */
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d0e0e3;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #f0f8ff;
+    color: #333a45;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #8abcd1;
+    box-shadow: 0 0 8px rgba(138, 188, 209, 0.3);
+}
+
+/* --- Estilo del Botón --- */
+button#boton_calcular { 
+    background-color: #ffb3ba;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+button#boton_calcular:hover {
+    background-color: #ff8f9a;
+}
+
+button#boton_calcular:active {
+    background-color: #f87a85;
+    transform: scale(0.97);
+}
