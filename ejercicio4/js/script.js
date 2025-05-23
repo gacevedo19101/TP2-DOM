@@ -1,10 +1,10 @@
 // funcion que realiza el calculo del IMC
 function calcular_imc_dom(in_peso, in_estatura) {
     if (in_estatura <= 0) {
-        return null; 
+        return null 
     }
-    const imc = in_peso / (in_estatura * in_estatura);
-    return imc;
+    const imc = in_peso / (in_estatura * in_estatura)
+    return imc
 }
 
 // incorporo las declaraciones de los elementos

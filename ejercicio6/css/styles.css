@@ -1,0 +1,149 @@
+/* --- Estilos Generales del Cuerpo --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff; 
+    color: #333a45;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 95vh;
+    box-sizing: border-box;
+}
+
+/* --- Contenedor Principal (para la sección de inputs) --- */
+section {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    text-align: left;
+}
+
+/* --- Estilo del Encabezado H1 (se aplicará a ambos H1) --- */
+h1 {
+    color: #6a8d92; 
+    text-align: center;
+    margin-bottom: 15px; 
+    font-size: 1.8em; 
+}
+
+/* Si quieres que el segundo H1 tenga menos margen superior: */
+h1 + h1 {
+    margin-top: -10px; 
+    margin-bottom: 25px;
+    font-size: 1.6em; 
+}
+
+
+/* --- Estilo para los Divs que contienen Label + Input --- */
+div {
+    margin-bottom: 20px;
+}
+
+/* --- Estilo de las Etiquetas (Labels) --- */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #5c7a7d;
+}
+
+/* --- Estilo de los Campos de Entrada (Inputs) --- */
+input[type="number"],
+input[type="text"],
+input[type="email"] { 
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d0e0e3;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #f0f8ff;
+    color: #333a45;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus { 
+    outline: none;
+    border-color: #8abcd1;
+    box-shadow: 0 0 8px rgba(138, 188, 209, 0.3);
+}
+
+/* --- Estilo del Botón --- */
+button#boton_enviar { 
+    background-color: #ffb3ba; 
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.25s ease, transform 0.15s ease;
+}
+
+button#boton_enviar:hover {
+    background-color: #ff8f9a;
+}
+
+button#boton_enviar:active {
+    background-color: #f87a85;
+    transform: scale(0.97);
+}
+
+/* --- Estilos para el Párrafo de Resultados de Validación --- */
+#pResultadoValidacion {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+.mensaje-exito {
+    background-color: #e6ffed;
+    color: #2f6f2f;
+    border: 1px solid #a8d5a8;
+}
+
+.mensaje-error {
+    background-color: #ffeeee;
+    color: #a73434;
+    border: 1px solid #f8c8c8;
+}
+
+#pResultadoValidacion strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.mensaje_exito {
+    background-color: #e6ffed;
+    color: #2f6f2f;
+    border: 1px solid #a8d5a8;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.mensaje_error {
+    background-color: #ffeeee;
+    color: #a73434;
+    border: 1px solid #f8c8c8;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
